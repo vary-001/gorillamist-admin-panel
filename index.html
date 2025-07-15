@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GorillaMist</title>
+ <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Play CDN with config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            jungle: '#1b2b1f',         // dark forest green base
+            fernmist: '#2f4f3f',       // muted green for highlights
+            rainforest: '#356859',     // deeper accent green
+            moss: '#486b42',           // moss green
+            bark: '#3c2f26',           // bark brown
+            ivorysmoke: '#f5f5f4',     // near white for text
+            sunleaf: '#a2c66d',        // light green accent
+            deepsoil: '#1b1611',       // very dark brown background
+          },
+          fontFamily: {
+            heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],  // popular modern Google font
+            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],       // clean, readable font
+          },
+        },
+      },
+    }
+  </script>
+
+ 
+
+  <!-- Google Fonts import for Poppins & Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-jungle text-ivorysmoke font-body">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
